@@ -18,3 +18,21 @@ while True:
     print(n7)
 
     escolha = input('Digite sua escolha (1-7): ')
+
+
+    if escolha == '1':
+        nome = input('Digite o nome do estudante: ')
+        id_estudante = input('Digite o ID do estudante: ')
+        notas = input('Digite as notas do estudante (separadas por espaço): ').split()
+        notas = [float(nota) for nota in notas]
+        estudante = {"Nome": nome, "ID": id_estudante, "Notas": notas}
+        estudantes.append(estudante)
+
+    elif escolha == '2':
+        if estudantes:
+            for estudante in estudantes:
+                print(f"Nome: {estudante['Nome']}")
+                print(f"ID: {estudante['ID']}")
+                print(f"Notas: {', '.join(map(str, estudante['Notas']))}")
+        else:
+            print('Nenhum registro de estudante encontrado.')
