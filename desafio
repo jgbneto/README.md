@@ -1,0 +1,20 @@
+n1 = '1. Adicionar registro de estudante'
+n2 = '2. Exibir registro de estudante'
+n3 = '3. Procurar por um estudante'
+n4 = '4. Calcular média das notas'
+n5 = '5. Salvar registros em arquivo'
+n6 = '6. Carregar registros de arquivo'
+n7 = '7. Sair'
+
+estudantes = []
+
+while True:
+    print(n1)
+    print(n2)
+    print(n3)
+    print(n4)
+    print(n5)
+    print(n6)
+    print(n7)
+
+    escolha = input('Digite sua escolha (1-7): ')
